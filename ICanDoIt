@@ -1,0 +1,5 @@
+regular expression for java ints -  ^\s*int\s+(\w+\s*,\s*)*\w+\s*;
+ 
+pipeline command to extract lines 5-12 and grep the lines with CSC*** - head -n 12 CSCCodes.txt | tail -n 8 | grep -E 'C[S,s][C,c][0-9]{3}\b'
+
+Sequence command to copy Ticker from parent directory to current directory then compiles and puts output to executable Ticker - cp../Ticker.c Ticker.c; gcc -Wall Ticker.c -o Ticker 
